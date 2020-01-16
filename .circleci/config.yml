@@ -8,10 +8,7 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
-          name: Install dependencies
-          command: |
-              npm install
-              docker-compose==19.03.5
+              yarn install
       - restore_cache:
           keys:
             - v1-{{ .Branch }}
