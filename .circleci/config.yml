@@ -13,7 +13,7 @@ jobs:
       - run: yarn test
 
     working_directory: /app
-    docker:
+    docker1:
             - image: docker:19.03.5-ce-git
           steps:
             - checkout
